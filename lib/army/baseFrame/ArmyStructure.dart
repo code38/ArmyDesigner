@@ -6,4 +6,5 @@
 class ArmyStructure{
   String structureName;
   String structureId;
+  String structureType;
 }
