@@ -5,8 +5,6 @@ import 'ArmyStructure.dart';
 /// The container component, This component can contain other ArmyStructure
 class ArmyContainer extends ArmyStructure{
   ///子结构列表
-  ///在添加时将会检查是否符合相关限制
+  ///TODO:在添加时将会检查是否符合相关限制
   List<ArmyStructure> _subStructure;
-
-
 }
