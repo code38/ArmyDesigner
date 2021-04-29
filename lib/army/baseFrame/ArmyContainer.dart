@@ -6,5 +6,5 @@ import 'ArmyStructure.dart';
 class ArmyContainer extends ArmyStructure{
   ///子结构列表
   ///TODO:在添加时将会检查是否符合相关限制
-  List<ArmyStructure> _subStructure;
+  List<ArmyStructure> subStr;
 }

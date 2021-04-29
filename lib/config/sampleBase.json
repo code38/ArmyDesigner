@@ -1,0 +1,35 @@
+[
+  {
+    "Id": "Unit",
+    "Type": "ArmyContainer",
+    "subStructure": [
+      {
+        "Id": "UnitName",
+        "Type": "Attribute",
+        "attrName": "单位名"
+      },
+      {
+        "Id": "Point",
+        "Type": "Attribute",
+        "attrName": "分数"
+      },
+      {
+        "Id": "WeaponList",
+        "Type": "ArmyContainer",
+        "subStructure": [
+          {
+            "Id": "Weapon",
+            "Type": "ArmyContainer",
+            "subStructure": [
+              {
+                "Id": "Point",
+                "Type": "Attribute",
+                "attrName": "分数"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

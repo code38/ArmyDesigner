@@ -1,0 +1,10 @@
+ArmyContainer:
+    strName: Infanty Squad
+    strType: Unit
+    strId: 40kAsTpIs
+    subStr:
+        ArmyAttribute:
+            strType: Point
+            attrName: Point
+            attrValue: 55
+
