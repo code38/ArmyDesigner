@@ -1,5 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
 <ArmyContainer xmlns="file:///D:\JSrc\untitled3\lib\config\sampleBase.xsd" strType="List" strName="Test List">
     <ArmyContainer strType="Unit" strName="Infantry Squad">
         <ArmyAttribute strName="UnitName" name="Name" value="Infantry Squad"/>
@@ -8,105 +6,207 @@
         <ArmyContainer strType="UnitModel" strName="UnitModel">
             <ArmyContainer strName="Sergeant" strType="Model">
                 <ArmyContainer strName="Weapons" strType="Weapons">
-
+                    <ArmyContainer strType="Weapon">
+                        <ArmyAttribute strName="WeaponName" name="WeaponName" value="Chain Sword"/>
+                        <ArmyAttribute strName="WeaponPoint" name="Point" value="0"/>
+                        <ArmyAttribute strName="WeaponUser" name="WeaponUser" value="Sergeant"/>
+                        <ArmyContainer strName="WeaponAttr" strType="Attr">
+                            <ArmyAttribute name="type" value="Melee"/>
+                            <ArmyAttribute name="rapid" value="User"/>
+                            <ArmyAttribute name="S" value="0"/>
+                            <ArmyAttribute name="AP" value="0"/>
+                            <ArmyAttribute name="D" value="1"/>
+                            <ArmyContainer strName="WeaponEffect">
+                                <ArmyRuleEffect effectDesc="When Use This Weapon User's A+1" effectCode=""/>
+                            </ArmyContainer>
+                        </ArmyContainer>
+                    </ArmyContainer>
+                    <ArmyContainer strType="Weapon">
+                        <ArmyAttribute strName="WeaponName" name="WeaponName" value="Laspistol"/>
+                        <ArmyAttribute strName="WeaponPoint" name="Point" value="0"/>
+                        <ArmyAttribute strName="WeaponUser" name="WeaponUser" value="Sergeant"/>
+                        <ArmyContainer strName="WeaponAttr" strType="Attr">
+                            <ArmyAttribute name="type" value="Pistol"/>
+                            <ArmyAttribute name="rapid" value="1"/>
+                            <ArmyAttribute name="S" value="3"/>
+                            <ArmyAttribute name="AP" value="0"/>
+                            <ArmyAttribute name="D" value="1"/>
+                            <ArmyContainer strName="WeaponEffect">
+                            </ArmyContainer>
+                        </ArmyContainer>
+                    </ArmyContainer>
                 </ArmyContainer>
             </ArmyContainer>
             <ArmyContainer strName="Infantry" strType="Model">
                 <ArmyContainer strName="Weapons" strType="Weapons">
-
+                    <ArmyContainer strType="Weapon" strName="Lasgun">
+                        <ArmyAttribute strName="WeaponName" name="WeaponName" value="Lasgun"/>
+                        <ArmyAttribute strName="WeaponPoint" name="Point" value="0"/>
+                        <ArmyAttribute strName="WeaponUser" name="WeaponUser" value="Infantry"/>
+                        <ArmyContainer strName="WeaponAttr" strType="Attr">
+                            <ArmyAttribute name="type" value="Rapid Fire"/>
+                            <ArmyAttribute name="rapid" value="1"/>
+                            <ArmyAttribute name="S" value="3"/>
+                            <ArmyAttribute name="AP" value="0"/>
+                            <ArmyAttribute name="D" value="1"/>
+                            <ArmyContainer strName="WeaponEffect">
+                            </ArmyContainer>
+                        </ArmyContainer>
+                    </ArmyContainer>
                 </ArmyContainer>
             </ArmyContainer>
             <ArmyContainer strName="Infantry" strType="Model">
                 <ArmyContainer strName="Weapons" strType="Weapons">
-
+                    <ArmyContainer strType="Weapon" strName="Lasgun">
+                        <ArmyAttribute strName="WeaponName" name="WeaponName" value="Lasgun"/>
+                        <ArmyAttribute strName="WeaponPoint" name="Point" value="0"/>
+                        <ArmyAttribute strName="WeaponUser" name="WeaponUser" value="Infantry"/>
+                        <ArmyContainer strName="WeaponAttr" strType="Attr">
+                            <ArmyAttribute name="type" value="Rapid Fire"/>
+                            <ArmyAttribute name="rapid" value="1"/>
+                            <ArmyAttribute name="S" value="3"/>
+                            <ArmyAttribute name="AP" value="0"/>
+                            <ArmyAttribute name="D" value="1"/>
+                            <ArmyContainer strName="WeaponEffect">
+                            </ArmyContainer>
+                        </ArmyContainer>
+                    </ArmyContainer>
                 </ArmyContainer>
             </ArmyContainer>
             <ArmyContainer strName="Infantry" strType="Model">
                 <ArmyContainer strName="Weapons" strType="Weapons">
-
+                    <ArmyContainer strType="Weapon" strName="Lasgun">
+                        <ArmyAttribute strName="WeaponName" name="WeaponName" value="Lasgun"/>
+                        <ArmyAttribute strName="WeaponPoint" name="Point" value="0"/>
+                        <ArmyAttribute strName="WeaponUser" name="WeaponUser" value="Infantry"/>
+                        <ArmyContainer strName="WeaponAttr" strType="Attr">
+                            <ArmyAttribute name="type" value="Rapid Fire"/>
+                            <ArmyAttribute name="rapid" value="1"/>
+                            <ArmyAttribute name="S" value="3"/>
+                            <ArmyAttribute name="AP" value="0"/>
+                            <ArmyAttribute name="D" value="1"/>
+                            <ArmyContainer strName="WeaponEffect">
+                            </ArmyContainer>
+                        </ArmyContainer>
+                    </ArmyContainer>
                 </ArmyContainer>
             </ArmyContainer>
             <ArmyContainer strName="Infantry" strType="Model">
                 <ArmyContainer strName="Weapons" strType="Weapons">
-
+                    <ArmyContainer strType="Weapon" strName="Lasgun">
+                        <ArmyAttribute strName="WeaponName" name="WeaponName" value="Lasgun"/>
+                        <ArmyAttribute strName="WeaponPoint" name="Point" value="0"/>
+                        <ArmyAttribute strName="WeaponUser" name="WeaponUser" value="Infantry"/>
+                        <ArmyContainer strName="WeaponAttr" strType="Attr">
+                            <ArmyAttribute name="type" value="Rapid Fire"/>
+                            <ArmyAttribute name="rapid" value="1"/>
+                            <ArmyAttribute name="S" value="3"/>
+                            <ArmyAttribute name="AP" value="0"/>
+                            <ArmyAttribute name="D" value="1"/>
+                            <ArmyContainer strName="WeaponEffect">
+                            </ArmyContainer>
+                        </ArmyContainer>
+                    </ArmyContainer>
                 </ArmyContainer>
             </ArmyContainer>
             <ArmyContainer strName="Infantry" strType="Model">
                 <ArmyContainer strName="Weapons" strType="Weapons">
-
+                    <ArmyContainer strType="Weapon" strName="Lasgun">
+                        <ArmyAttribute strName="WeaponName" name="WeaponName" value="Lasgun"/>
+                        <ArmyAttribute strName="WeaponPoint" name="Point" value="0"/>
+                        <ArmyAttribute strName="WeaponUser" name="WeaponUser" value="Infantry"/>
+                        <ArmyContainer strName="WeaponAttr" strType="Attr">
+                            <ArmyAttribute name="type" value="Rapid Fire"/>
+                            <ArmyAttribute name="rapid" value="1"/>
+                            <ArmyAttribute name="S" value="3"/>
+                            <ArmyAttribute name="AP" value="0"/>
+                            <ArmyAttribute name="D" value="1"/>
+                            <ArmyContainer strName="WeaponEffect">
+                            </ArmyContainer>
+                        </ArmyContainer>
+                    </ArmyContainer>
                 </ArmyContainer>
             </ArmyContainer>
             <ArmyContainer strName="Infantry" strType="Model">
                 <ArmyContainer strName="Weapons" strType="Weapons">
-
+                    <ArmyContainer strType="Weapon" strName="Lasgun">
+                        <ArmyAttribute strName="WeaponName" name="WeaponName" value="Lasgun"/>
+                        <ArmyAttribute strName="WeaponPoint" name="Point" value="0"/>
+                        <ArmyAttribute strName="WeaponUser" name="WeaponUser" value="Infantry"/>
+                        <ArmyContainer strName="WeaponAttr" strType="Attr">
+                            <ArmyAttribute name="type" value="Rapid Fire"/>
+                            <ArmyAttribute name="rapid" value="1"/>
+                            <ArmyAttribute name="S" value="3"/>
+                            <ArmyAttribute name="AP" value="0"/>
+                            <ArmyAttribute name="D" value="1"/>
+                            <ArmyContainer strName="WeaponEffect">
+                            </ArmyContainer>
+                        </ArmyContainer>
+                    </ArmyContainer>
                 </ArmyContainer>
             </ArmyContainer>
             <ArmyContainer strName="Infantry" strType="Model">
                 <ArmyContainer strName="Weapons" strType="Weapons">
-
+                    <ArmyContainer strType="Weapon" strName="Lasgun">
+                        <ArmyAttribute strName="WeaponName" name="WeaponName" value="Lasgun"/>
+                        <ArmyAttribute strName="WeaponPoint" name="Point" value="0"/>
+                        <ArmyAttribute strName="WeaponUser" name="WeaponUser" value="Infantry"/>
+                        <ArmyContainer strName="WeaponAttr" strType="Attr">
+                            <ArmyAttribute name="type" value="Rapid Fire"/>
+                            <ArmyAttribute name="rapid" value="1"/>
+                            <ArmyAttribute name="S" value="3"/>
+                            <ArmyAttribute name="AP" value="0"/>
+                            <ArmyAttribute name="D" value="1"/>
+                            <ArmyContainer strName="WeaponEffect">
+                            </ArmyContainer>
+                        </ArmyContainer>
+                    </ArmyContainer>
                 </ArmyContainer>
             </ArmyContainer>
             <ArmyContainer strName="Infantry" strType="Model">
                 <ArmyContainer strName="Weapons" strType="Weapons">
-
+                    <ArmyContainer strType="Weapon" strName="Lasgun">
+                        <ArmyAttribute strName="WeaponName" name="WeaponName" value="Lasgun"/>
+                        <ArmyAttribute strName="WeaponPoint" name="Point" value="0"/>
+                        <ArmyAttribute strName="WeaponUser" name="WeaponUser" value="Infantry"/>
+                        <ArmyContainer strName="WeaponAttr" strType="Attr">
+                            <ArmyAttribute name="type" value="Rapid Fire"/>
+                            <ArmyAttribute name="rapid" value="1"/>
+                            <ArmyAttribute name="S" value="3"/>
+                            <ArmyAttribute name="AP" value="0"/>
+                            <ArmyAttribute name="D" value="1"/>
+                            <ArmyContainer strName="WeaponEffect">
+                            </ArmyContainer>
+                        </ArmyContainer>
+                    </ArmyContainer>
                 </ArmyContainer>
             </ArmyContainer>
             <ArmyContainer strName="Infantry" strType="Model">
                 <ArmyContainer strName="Weapons" strType="Weapons">
-
+                    <ArmyContainer strType="Weapon" strName="Lasgun">
+                        <ArmyAttribute strName="WeaponName" name="WeaponName" value="Lasgun"/>
+                        <ArmyAttribute strName="WeaponPoint" name="Point" value="0"/>
+                        <ArmyAttribute strName="WeaponUser" name="WeaponUser" value="Infantry"/>
+                        <ArmyContainer strName="WeaponAttr" strType="Attr">
+                            <ArmyAttribute name="type" value="Rapid Fire"/>
+                            <ArmyAttribute name="rapid" value="1"/>
+                            <ArmyAttribute name="S" value="3"/>
+                            <ArmyAttribute name="AP" value="0"/>
+                            <ArmyAttribute name="D" value="1"/>
+                            <ArmyContainer strName="WeaponEffect">
+                            </ArmyContainer>
+                        </ArmyContainer>
+                    </ArmyContainer>
                 </ArmyContainer>
             </ArmyContainer>
         </ArmyContainer>
         <ArmyContainer strType="UnitWeaponList" strName="weaponList">
             <ArmyContainer strType="Weapon">
-                <ArmyAttribute strName="WeaponName" name="WeaponName" value="Chain Sword"/>
-                <ArmyAttribute strName="WeaponPoint" name="Point" value="0"/>
-                <ArmyAttribute strName="WeaponUser" name="WeaponUser" value="Sergeant"/>
-                <ArmyContainer strName="WeaponAttr" strType="Attr">
-                    <ArmyAttribute name="type" value="Melee"/>
-                    <ArmyAttribute name="rapid" value="User"/>
-                    <ArmyAttribute name="S" value="0"/>
-                    <ArmyAttribute name="AP" value="0"/>
-                    <ArmyAttribute name="D" value="1"/>
-                    <ArmyContainer strName="WeaponEffect">
-                        <ArmyRuleEffect effectDesc="When Use This Weapon User's A+1" effectCode=""/>
-                    </ArmyContainer>
-                </ArmyContainer>
-            </ArmyContainer>
-            <ArmyContainer strType="Weapon">
-                <ArmyAttribute strName="WeaponName" name="WeaponName" value="Laspistol"/>
-                <ArmyAttribute strName="WeaponPoint" name="Point" value="0"/>
-                <ArmyAttribute strName="WeaponUser" name="WeaponUser" value="Sergeant"/>
-                <ArmyContainer strName="WeaponAttr" strType="Attr">
-                    <ArmyAttribute name="type" value="Pistol"/>
-                    <ArmyAttribute name="rapid" value="1"/>
-                    <ArmyAttribute name="S" value="3"/>
-                    <ArmyAttribute name="AP" value="0"/>
-                    <ArmyAttribute name="D" value="1"/>
-                    <ArmyContainer strName="WeaponEffect">
-                    </ArmyContainer>
-                </ArmyContainer>
-            </ArmyContainer>
-            <ArmyContainer strType="Weapon">
-                <ArmyAttribute strName="WeaponName" name="WeaponName" value="Lasgun"/>
-                <ArmyAttribute strName="WeaponPoint" name="Point" value="0"/>
-                <ArmyAttribute strName="WeaponUser" name="WeaponUser" value="Infantry"/>
-                <ArmyContainer strName="WeaponAttr" strType="Attr">
-                    <ArmyAttribute name="type" value="Rapid Fire"/>
-                    <ArmyAttribute name="rapid" value="1"/>
-                    <ArmyAttribute name="S" value="3"/>
-                    <ArmyAttribute name="AP" value="0"/>
-                    <ArmyAttribute name="D" value="1"/>
-                    <ArmyContainer strName="WeaponEffect">
-                    </ArmyContainer>
-                </ArmyContainer>
-            </ArmyContainer>
-            <ArmyContainer strType="Weapon">
                 <ArmyAttribute strName="WeaponName" name="WeaponName" value="Lasgun"/>
                 <ArmyAttribute strName="WeaponPoint" name="Point" value="5"/>
                 <ArmyAttribute strName="WeaponUser" name="WeaponUser" value="Infantry"/>
                 <ArmyAttribute strName="WeaponReplace" name="Replace" value="Lasgun"/>
-                <ArmyAttribute strName="WeaponMaxNum" name="MaxNum" value="1"/>
+                <ArmyLimit strName="WeaponMaxNum" limitDesc="MaxNum 1"/>
                 <ArmyContainer strName="WeaponAttr" strType="Attr">
                     <ArmyAttribute name="type" value="Rapid Fire"/>
                     <ArmyAttribute name="rapid" value="1"/>
@@ -127,26 +227,39 @@
             <ArmyContainer strName="Leman Russ Battle Tank" strType="Model">
                 <ArmyAttribute strType="ModelPoint" value="140"/>
                 <ArmyContainer strName="Weapons" strType="Weapons">
-
+                    <ArmyContainer strType="Weapon">
+                        <ArmyAttribute strName="WeaponName" name="WeaponName" value="Battle Cannon"/>
+                        <ArmyAttribute strName="WeaponPoint" name="Point" value="5"/>
+                        <ArmyAttribute strName="WeaponUser" name="WeaponUser" value="Leman Russ Battle Tank"/>
+                        <ArmyContainer strName="WeaponAttr" strType="Attr">
+                            <ArmyAttribute name="type" value="Melee"/>
+                            <ArmyAttribute name="rapid" value="User"/>
+                            <ArmyAttribute name="S" value="8"/>
+                            <ArmyAttribute name="AP" value="-2"/>
+                            <ArmyAttribute name="D" value="D3"/>
+                            <ArmyContainer strName="WeaponEffect">
+                                <ArmyRuleEffect effectDesc="Blast" effectCode=""/>
+                            </ArmyContainer>
+                        </ArmyContainer>
+                    </ArmyContainer>
+                    <ArmyContainer strType="Weapon">
+                        <ArmyAttribute strName="WeaponName" name="WeaponName" value="Heavy Bolter"/>
+                        <ArmyAttribute strName="WeaponPoint" name="Point" value="5"/>
+                        <ArmyAttribute strName="WeaponUser" name="WeaponUser" value="Leman Russ Battle Tank"/>
+                        <ArmyContainer strName="WeaponAttr" strType="Attr">
+                            <ArmyAttribute name="type" value="Heavy"/>
+                            <ArmyAttribute name="rapid" value="3"/>
+                            <ArmyAttribute name="S" value="5"/>
+                            <ArmyAttribute name="AP" value="-1"/>
+                            <ArmyAttribute name="D" value="2"/>
+                            <ArmyContainer strName="WeaponEffect">
+                            </ArmyContainer>
+                        </ArmyContainer>
+                    </ArmyContainer>
                 </ArmyContainer>
             </ArmyContainer>
         </ArmyContainer>
         <ArmyContainer strType="UnitWeaponList" strName="weaponList">
-            <ArmyContainer strType="Weapon">
-                <ArmyAttribute strName="WeaponName" name="WeaponName" value="Battle Cannon"/>
-                <ArmyAttribute strName="WeaponPoint" name="Point" value="5"/>
-                <ArmyAttribute strName="WeaponUser" name="WeaponUser" value="Leman Russ Battle Tank"/>
-                <ArmyContainer strName="WeaponAttr" strType="Attr">
-                    <ArmyAttribute name="type" value="Melee"/>
-                    <ArmyAttribute name="rapid" value="User"/>
-                    <ArmyAttribute name="S" value="8"/>
-                    <ArmyAttribute name="AP" value="-2"/>
-                    <ArmyAttribute name="D" value="D3"/>
-                    <ArmyContainer strName="WeaponEffect">
-                        <ArmyRuleEffect effectDesc="When Use This Weapon User's A+1" effectCode=""/>
-                    </ArmyContainer>
-                </ArmyContainer>
-            </ArmyContainer>
             <ArmyContainer strType="Weapon">
                 <ArmyAttribute strName="WeaponName" name="WeaponName" value="Demolisher Siege Cannon"/>
                 <ArmyAttribute strName="WeaponPoint" name="Point" value="5"/>
@@ -159,11 +272,10 @@
                     <ArmyAttribute name="AP" value="-3"/>
                     <ArmyAttribute name="D" value="D6"/>
                     <ArmyContainer strName="WeaponEffect">
-                        <ArmyRuleEffect effectDesc="When Use This Weapon User's A+1" effectCode=""/>
+                        <ArmyRuleEffect effectDesc="Blast" effectCode=""/>
                     </ArmyContainer>
                 </ArmyContainer>
             </ArmyContainer>
         </ArmyContainer>
     </ArmyContainer>
 </ArmyContainer>
-

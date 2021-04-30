@@ -1,35 +1,1181 @@
-[
-  {
-    "Id": "Unit",
-    "Type": "ArmyContainer",
-    "subStructure": [
-      {
-        "Id": "UnitName",
-        "Type": "Attribute",
-        "attrName": "单位名"
-      },
-      {
-        "Id": "Point",
-        "Type": "Attribute",
-        "attrName": "分数"
-      },
-      {
-        "Id": "WeaponList",
-        "Type": "ArmyContainer",
-        "subStructure": [
-          {
-            "Id": "Weapon",
-            "Type": "ArmyContainer",
-            "subStructure": [
-              {
-                "Id": "Point",
-                "Type": "Attribute",
-                "attrName": "分数"
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  }
-]
+{
+  "entityType": "ArmyContainer",
+  "strType": "List",
+  "strName": "Test List",
+  "subStr": [
+    {
+      "entityType": "ArmyContainer",
+      "strType": "Unit",
+      "strName": "Infantry Squad",
+      "subStr": [
+        {
+          "entityType": "ArmyAttribute",
+          "strName": "UnitName",
+          "name": "Name",
+          "value": "Infantry Squad",
+          "value": "55"
+        },
+        {
+          "entityType": "ArmyAttribute",
+          "strType": "UnitPoint",
+          "value": "55"
+        },
+        {
+          "entityType": "ArmyAttribute",
+          "strType": "UnitType",
+          "value": "Troop"
+        },
+        {
+          "entityType": "ArmyContainer",
+          "strType": "UnitModel",
+          "strName": "UnitModel",
+          "subStr": [
+            {
+              "entityType": "ArmyContainer",
+              "strType": "Sergeant",
+              "strName": "Model",
+              "subStr": [
+                {
+                  "entityType": "ArmyContainer",
+                  "strType": "Weapons",
+                  "strName": "Weapons",
+                  "subStr": [
+                    {
+                      "entityType": "ArmyContainer",
+                      "strType": "Weapon",
+                      "subStr": [
+                        {
+                          "entityType": "ArmyAttribute",
+                          "strName": "WeaponName",
+                          "name": "WeaponName",
+                          "value": "Chain Sword"
+                        },
+                        {
+                          "entityType": "ArmyAttribute",
+                          "strName": "WeaponPoint",
+                          "name": "Point",
+                          "value": "0"
+                        },
+                        {
+                          "entityType": "ArmyAttribute",
+                          "strName": "WeaponUser",
+                          "name": "WeaponUser",
+                          "value": "Sergeant"
+                        },
+                        {
+                          "entityType": "ArmyContainer",
+                          "strName": "WeaponAttr",
+                          "strType": "Attr",
+                          "subStr": [
+                            {
+                              "entityType": "ArmyAttribute",
+                              "name": "type",
+                              "value": "Melee"
+                            },
+                            {
+                              "entityType": "ArmyAttribute",
+                              "name": "rapid",
+                              "value": "User"
+                            },
+                            {
+                              "entityType": "ArmyAttribute",
+                              "name": "S",
+                              "value": "0"
+                            },
+                            {
+                              "entityType": "ArmyAttribute",
+                              "name": "AP",
+                              "value": "0"
+                            },
+                            {
+                              "entityType": "ArmyAttribute",
+                              "name": "D",
+                              "value": "1"
+                            },
+                            {
+                              "entityType": "ArmyContainer",
+                              "strName": "WeaponEffect",
+                              "subStr": [
+                                {
+                                  "entityType": "ArmyRuleEffect",
+                                  "effectDesc": "When Use This Weapon User's A+1",
+                                  "effectCode": ""
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "entityType": "ArmyContainer",
+                      "strType": "Weapon",
+                      "subStr": [
+                        {
+                          "entityType": "ArmyAttribute",
+                          "strName": "WeaponName",
+                          "name": "WeaponName",
+                          "value": "Laspistol"
+                        },
+                        {
+                          "entityType": "ArmyAttribute",
+                          "strName": "WeaponPoint",
+                          "name": "Point",
+                          "value": "0"
+                        },
+                        {
+                          "entityType": "ArmyAttribute",
+                          "strName": "WeaponUser",
+                          "name": "WeaponUser",
+                          "value": "Sergeant"
+                        },
+                        {
+                          "entityType": "ArmyContainer",
+                          "strName": "WeaponAttr",
+                          "strType": "Attr",
+                          "subStr": [
+                            {
+                              "entityType": "ArmyAttribute",
+                              "name": "type",
+                              "value": "Pistol"
+                            },
+                            {
+                              "entityType": "ArmyAttribute",
+                              "name": "rapid",
+                              "value": "1"
+                            },
+                            {
+                              "entityType": "ArmyAttribute",
+                              "name": "S",
+                              "value": "3"
+                            },
+                            {
+                              "entityType": "ArmyAttribute",
+                              "name": "AP",
+                              "value": "0"
+                            },
+                            {
+                              "entityType": "ArmyAttribute",
+                              "name": "D",
+                              "value": "1"
+                            },
+                            {
+                              "entityType": "ArmyContainer",
+                              "strName": "WeaponEffect"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "entityType": "ArmyContainer",
+              "strName": "Infantry",
+              "strType": "Model",
+              "subStr": [
+                {
+                  "entityType": "ArmyContainer",
+                  "strName": "Weapons",
+                  "strType": "Weapons",
+                  "subStr": [
+                    {
+                      "entityType": "ArmyContainer",
+                      "strType": "Weapon",
+                      "strName": "Lasgun",
+                      "subStr": [
+                        {
+                          "entityType": "ArmyAttribute",
+                          "strName": "WeaponName",
+                          "name": "WeaponName",
+                          "value": "Lasgun"
+                        },
+                        {
+                          "entityType": "ArmyAttribute",
+                          "strName": "WeaponPoint",
+                          "name": "Point",
+                          "value": "0"
+                        },
+                        {
+                          "entityType": "ArmyAttribute",
+                          "strName": "WeaponUser",
+                          "name": "WeaponUser",
+                          "value": "Infantry"
+                        },
+                        {
+                          "entityType": "ArmyContainer",
+                          "strName": "WeaponAttr",
+                          "strType": "Attr"
+                        },
+                        {
+                          "entityType": "ArmyAttribute",
+                          "name": "type",
+                          "value": "Rapid Fire"
+                        },
+                        {
+                          "entityType": "ArmyAttribute",
+                          "name": "rapid",
+                          "value": "1"
+                        },
+                        {
+                          "entityType": "ArmyAttribute",
+                          "name": "S",
+                          "value": "3"
+                        },
+                        {
+                          "entityType": "ArmyAttribute",
+                          "name": "AP",
+                          "value": "0"
+                        },
+                        {
+                          "entityType": "ArmyAttribute",
+                          "name": "D",
+                          "value": "1"
+                        },
+                        {
+                          "entityType": "ArmyContainer",
+                          "strName": "WeaponEffect"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "entityType": "ArmyContainer",
+              "strName": "Infantry",
+              "strType": "Model",
+              "subStr": [
+                {
+                  "entityType": "ArmyContainer",
+                  "strName": "Weapons",
+                  "strType": "Weapons",
+                  "subStr": [
+                    {
+                      "entityType": "ArmyContainer",
+                      "strType": "Weapon",
+                      "strName": "Lasgun",
+                      "subStr": [
+                        {
+                          "entityType": "ArmyAttribute",
+                          "strName": "WeaponName",
+                          "name": "WeaponName",
+                          "value": "Lasgun"
+                        },
+                        {
+                          "entityType": "ArmyAttribute",
+                          "strName": "WeaponPoint",
+                          "name": "Point",
+                          "value": "0"
+                        },
+                        {
+                          "entityType": "ArmyAttribute",
+                          "strName": "WeaponUser",
+                          "name": "WeaponUser",
+                          "value": "Infantry"
+                        },
+                        {
+                          "entityType": "ArmyContainer",
+                          "strName": "WeaponAttr",
+                          "strType": "Attr"
+                        },
+                        {
+                          "entityType": "ArmyAttribute",
+                          "name": "type",
+                          "value": "Rapid Fire"
+                        },
+                        {
+                          "entityType": "ArmyAttribute",
+                          "name": "rapid",
+                          "value": "1"
+                        },
+                        {
+                          "entityType": "ArmyAttribute",
+                          "name": "S",
+                          "value": "3"
+                        },
+                        {
+                          "entityType": "ArmyAttribute",
+                          "name": "AP",
+                          "value": "0"
+                        },
+                        {
+                          "entityType": "ArmyAttribute",
+                          "name": "D",
+                          "value": "1"
+                        },
+                        {
+                          "entityType": "ArmyContainer",
+                          "strName": "WeaponEffect"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "entityType": "ArmyContainer",
+              "strName": "Infantry",
+              "strType": "Model",
+              "subStr": [
+                {
+                  "entityType": "ArmyContainer",
+                  "strName": "Weapons",
+                  "strType": "Weapons",
+                  "subStr": [
+                    {
+                      "entityType": "ArmyContainer",
+                      "strType": "Weapon",
+                      "strName": "Lasgun",
+                      "subStr": [
+                        {
+                          "entityType": "ArmyAttribute",
+                          "strName": "WeaponName",
+                          "name": "WeaponName",
+                          "value": "Lasgun"
+                        },
+                        {
+                          "entityType": "ArmyAttribute",
+                          "strName": "WeaponPoint",
+                          "name": "Point",
+                          "value": "0"
+                        },
+                        {
+                          "entityType": "ArmyAttribute",
+                          "strName": "WeaponUser",
+                          "name": "WeaponUser",
+                          "value": "Infantry"
+                        },
+                        {
+                          "entityType": "ArmyContainer",
+                          "strName": "WeaponAttr",
+                          "strType": "Attr"
+                        },
+                        {
+                          "entityType": "ArmyAttribute",
+                          "name": "type",
+                          "value": "Rapid Fire"
+                        },
+                        {
+                          "entityType": "ArmyAttribute",
+                          "name": "rapid",
+                          "value": "1"
+                        },
+                        {
+                          "entityType": "ArmyAttribute",
+                          "name": "S",
+                          "value": "3"
+                        },
+                        {
+                          "entityType": "ArmyAttribute",
+                          "name": "AP",
+                          "value": "0"
+                        },
+                        {
+                          "entityType": "ArmyAttribute",
+                          "name": "D",
+                          "value": "1"
+                        },
+                        {
+                          "entityType": "ArmyContainer",
+                          "strName": "WeaponEffect"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "entityType": "ArmyContainer",
+              "strName": "Infantry",
+              "strType": "Model",
+              "subStr": [
+                {
+                  "entityType": "ArmyContainer",
+                  "strName": "Weapons",
+                  "strType": "Weapons",
+                  "subStr": [
+                    {
+                      "entityType": "ArmyContainer",
+                      "strType": "Weapon",
+                      "strName": "Lasgun",
+                      "subStr": [
+                        {
+                          "entityType": "ArmyAttribute",
+                          "strName": "WeaponName",
+                          "name": "WeaponName",
+                          "value": "Lasgun"
+                        },
+                        {
+                          "entityType": "ArmyAttribute",
+                          "strName": "WeaponPoint",
+                          "name": "Point",
+                          "value": "0"
+                        },
+                        {
+                          "entityType": "ArmyAttribute",
+                          "strName": "WeaponUser",
+                          "name": "WeaponUser",
+                          "value": "Infantry"
+                        },
+                        {
+                          "entityType": "ArmyContainer",
+                          "strName": "WeaponAttr",
+                          "strType": "Attr"
+                        },
+                        {
+                          "entityType": "ArmyAttribute",
+                          "name": "type",
+                          "value": "Rapid Fire"
+                        },
+                        {
+                          "entityType": "ArmyAttribute",
+                          "name": "rapid",
+                          "value": "1"
+                        },
+                        {
+                          "entityType": "ArmyAttribute",
+                          "name": "S",
+                          "value": "3"
+                        },
+                        {
+                          "entityType": "ArmyAttribute",
+                          "name": "AP",
+                          "value": "0"
+                        },
+                        {
+                          "entityType": "ArmyAttribute",
+                          "name": "D",
+                          "value": "1"
+                        },
+                        {
+                          "entityType": "ArmyContainer",
+                          "strName": "WeaponEffect"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "entityType": "ArmyContainer",
+              "strName": "Infantry",
+              "strType": "Model",
+              "subStr": [
+                {
+                  "entityType": "ArmyContainer",
+                  "strName": "Weapons",
+                  "strType": "Weapons",
+                  "subStr": [
+                    {
+                      "entityType": "ArmyContainer",
+                      "strType": "Weapon",
+                      "strName": "Lasgun",
+                      "subStr": [
+                        {
+                          "entityType": "ArmyAttribute",
+                          "strName": "WeaponName",
+                          "name": "WeaponName",
+                          "value": "Lasgun"
+                        },
+                        {
+                          "entityType": "ArmyAttribute",
+                          "strName": "WeaponPoint",
+                          "name": "Point",
+                          "value": "0"
+                        },
+                        {
+                          "entityType": "ArmyAttribute",
+                          "strName": "WeaponUser",
+                          "name": "WeaponUser",
+                          "value": "Infantry"
+                        },
+                        {
+                          "entityType": "ArmyContainer",
+                          "strName": "WeaponAttr",
+                          "strType": "Attr"
+                        },
+                        {
+                          "entityType": "ArmyAttribute",
+                          "name": "type",
+                          "value": "Rapid Fire"
+                        },
+                        {
+                          "entityType": "ArmyAttribute",
+                          "name": "rapid",
+                          "value": "1"
+                        },
+                        {
+                          "entityType": "ArmyAttribute",
+                          "name": "S",
+                          "value": "3"
+                        },
+                        {
+                          "entityType": "ArmyAttribute",
+                          "name": "AP",
+                          "value": "0"
+                        },
+                        {
+                          "entityType": "ArmyAttribute",
+                          "name": "D",
+                          "value": "1"
+                        },
+                        {
+                          "entityType": "ArmyContainer",
+                          "strName": "WeaponEffect"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "entityType": "ArmyContainer",
+              "strName": "Infantry",
+              "strType": "Model",
+              "subStr": [
+                {
+                  "entityType": "ArmyContainer",
+                  "strName": "Weapons",
+                  "strType": "Weapons",
+                  "subStr": [
+                    {
+                      "entityType": "ArmyContainer",
+                      "strType": "Weapon",
+                      "strName": "Lasgun",
+                      "subStr": [
+                        {
+                          "entityType": "ArmyAttribute",
+                          "strName": "WeaponName",
+                          "name": "WeaponName",
+                          "value": "Lasgun"
+                        },
+                        {
+                          "entityType": "ArmyAttribute",
+                          "strName": "WeaponPoint",
+                          "name": "Point",
+                          "value": "0"
+                        },
+                        {
+                          "entityType": "ArmyAttribute",
+                          "strName": "WeaponUser",
+                          "name": "WeaponUser",
+                          "value": "Infantry"
+                        },
+                        {
+                          "entityType": "ArmyContainer",
+                          "strName": "WeaponAttr",
+                          "strType": "Attr"
+                        },
+                        {
+                          "entityType": "ArmyAttribute",
+                          "name": "type",
+                          "value": "Rapid Fire"
+                        },
+                        {
+                          "entityType": "ArmyAttribute",
+                          "name": "rapid",
+                          "value": "1"
+                        },
+                        {
+                          "entityType": "ArmyAttribute",
+                          "name": "S",
+                          "value": "3"
+                        },
+                        {
+                          "entityType": "ArmyAttribute",
+                          "name": "AP",
+                          "value": "0"
+                        },
+                        {
+                          "entityType": "ArmyAttribute",
+                          "name": "D",
+                          "value": "1"
+                        },
+                        {
+                          "entityType": "ArmyContainer",
+                          "strName": "WeaponEffect"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "entityType": "ArmyContainer",
+              "strName": "Infantry",
+              "strType": "Model",
+              "subStr": [
+                {
+                  "entityType": "ArmyContainer",
+                  "strName": "Weapons",
+                  "strType": "Weapons",
+                  "subStr": [
+                    {
+                      "entityType": "ArmyContainer",
+                      "strType": "Weapon",
+                      "strName": "Lasgun",
+                      "subStr": [
+                        {
+                          "entityType": "ArmyAttribute",
+                          "strName": "WeaponName",
+                          "name": "WeaponName",
+                          "value": "Lasgun"
+                        },
+                        {
+                          "entityType": "ArmyAttribute",
+                          "strName": "WeaponPoint",
+                          "name": "Point",
+                          "value": "0"
+                        },
+                        {
+                          "entityType": "ArmyAttribute",
+                          "strName": "WeaponUser",
+                          "name": "WeaponUser",
+                          "value": "Infantry"
+                        },
+                        {
+                          "entityType": "ArmyContainer",
+                          "strName": "WeaponAttr",
+                          "strType": "Attr"
+                        },
+                        {
+                          "entityType": "ArmyAttribute",
+                          "name": "type",
+                          "value": "Rapid Fire"
+                        },
+                        {
+                          "entityType": "ArmyAttribute",
+                          "name": "rapid",
+                          "value": "1"
+                        },
+                        {
+                          "entityType": "ArmyAttribute",
+                          "name": "S",
+                          "value": "3"
+                        },
+                        {
+                          "entityType": "ArmyAttribute",
+                          "name": "AP",
+                          "value": "0"
+                        },
+                        {
+                          "entityType": "ArmyAttribute",
+                          "name": "D",
+                          "value": "1"
+                        },
+                        {
+                          "entityType": "ArmyContainer",
+                          "strName": "WeaponEffect"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "entityType": "ArmyContainer",
+              "strName": "Infantry",
+              "strType": "Model",
+              "subStr": [
+                {
+                  "entityType": "ArmyContainer",
+                  "strName": "Weapons",
+                  "strType": "Weapons",
+                  "subStr": [
+                    {
+                      "entityType": "ArmyContainer",
+                      "strType": "Weapon",
+                      "strName": "Lasgun",
+                      "subStr": [
+                        {
+                          "entityType": "ArmyAttribute",
+                          "strName": "WeaponName",
+                          "name": "WeaponName",
+                          "value": "Lasgun"
+                        },
+                        {
+                          "entityType": "ArmyAttribute",
+                          "strName": "WeaponPoint",
+                          "name": "Point",
+                          "value": "0"
+                        },
+                        {
+                          "entityType": "ArmyAttribute",
+                          "strName": "WeaponUser",
+                          "name": "WeaponUser",
+                          "value": "Infantry"
+                        },
+                        {
+                          "entityType": "ArmyContainer",
+                          "strName": "WeaponAttr",
+                          "strType": "Attr"
+                        },
+                        {
+                          "entityType": "ArmyAttribute",
+                          "name": "type",
+                          "value": "Rapid Fire"
+                        },
+                        {
+                          "entityType": "ArmyAttribute",
+                          "name": "rapid",
+                          "value": "1"
+                        },
+                        {
+                          "entityType": "ArmyAttribute",
+                          "name": "S",
+                          "value": "3"
+                        },
+                        {
+                          "entityType": "ArmyAttribute",
+                          "name": "AP",
+                          "value": "0"
+                        },
+                        {
+                          "entityType": "ArmyAttribute",
+                          "name": "D",
+                          "value": "1"
+                        },
+                        {
+                          "entityType": "ArmyContainer",
+                          "strName": "WeaponEffect"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "entityType": "ArmyContainer",
+              "strName": "Infantry",
+              "strType": "Model",
+              "subStr": [
+                {
+                  "entityType": "ArmyContainer",
+                  "strName": "Weapons",
+                  "strType": "Weapons",
+                  "subStr": [
+                    {
+                      "entityType": "ArmyContainer",
+                      "strType": "Weapon",
+                      "strName": "Lasgun",
+                      "subStr": [
+                        {
+                          "entityType": "ArmyAttribute",
+                          "strName": "WeaponName",
+                          "name": "WeaponName",
+                          "value": "Lasgun"
+                        },
+                        {
+                          "entityType": "ArmyAttribute",
+                          "strName": "WeaponPoint",
+                          "name": "Point",
+                          "value": "0"
+                        },
+                        {
+                          "entityType": "ArmyAttribute",
+                          "strName": "WeaponUser",
+                          "name": "WeaponUser",
+                          "value": "Infantry"
+                        },
+                        {
+                          "entityType": "ArmyContainer",
+                          "strName": "WeaponAttr",
+                          "strType": "Attr"
+                        },
+                        {
+                          "entityType": "ArmyAttribute",
+                          "name": "type",
+                          "value": "Rapid Fire"
+                        },
+                        {
+                          "entityType": "ArmyAttribute",
+                          "name": "rapid",
+                          "value": "1"
+                        },
+                        {
+                          "entityType": "ArmyAttribute",
+                          "name": "S",
+                          "value": "3"
+                        },
+                        {
+                          "entityType": "ArmyAttribute",
+                          "name": "AP",
+                          "value": "0"
+                        },
+                        {
+                          "entityType": "ArmyAttribute",
+                          "name": "D",
+                          "value": "1"
+                        },
+                        {
+                          "entityType": "ArmyContainer",
+                          "strName": "WeaponEffect"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "entityType": "ArmyContainer",
+          "strType": "UnitWeaponList",
+          "strName": "weaponList",
+          "subStr": [
+            {
+              "entityType": "ArmyContainer",
+              "strType": "Weapon",
+              "subStr": [
+                {
+                  "entityType": "ArmyAttribute",
+                  "strName": "WeaponName",
+                  "name": "WeaponName",
+                  "value": "Lasgun"
+                },
+                {
+                  "entityType": "ArmyAttribute",
+                  "strName": "WeaponPoint",
+                  "name": "Point",
+                  "value": "5"
+                },
+                {
+                  "entityType": "ArmyAttribute",
+                  "strName": "WeaponUser",
+                  "name": "WeaponUser",
+                  "value": "Infantry"
+                },
+                {
+                  "entityType": "ArmyAttribute",
+                  "strName": "WeaponReplace",
+                  "name": "Replace",
+                  "value": "Lasgun"
+                },
+                {
+                  "entityType": "ArmyLimit",
+                  "strName": "WeaponMaxNum",
+                  "limitDesc": "MaxNum 1"
+                },
+                {
+                  "entityType": "ArmyContainer",
+                  "strName": "WeaponAttr",
+                  "strType": "Attr",
+                  "subStr": [
+                    {
+                      "entityType": "ArmyAttribute",
+                      "name": "type",
+                      "value": "Rapid Fire"
+                    },
+                    {
+                      "entityType": "ArmyAttribute",
+                      "name": "rapid",
+                      "value": "1"
+                    },
+                    {
+                      "entityType": "ArmyAttribute",
+                      "name": "S",
+                      "value": "3"
+                    },
+                    {
+                      "entityType": "ArmyAttribute",
+                      "name": "AP",
+                      "value": "0"
+                    },
+                    {
+                      "entityType": "ArmyAttribute",
+                      "name": "D",
+                      "value": "1"
+                    },
+                    {
+                      "entityType": "ArmyContainer",
+                      "strName": "WeaponEffect"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entityType": "ArmyContainer",
+      "strType": "Unit",
+      "strName": "Leman Russ Battle Tank Squad",
+      "subStr": [
+        {
+          "entityType": "ArmyAttribute",
+          "strName": "UnitName",
+          "name": "Name",
+          "value": "Leman Russ Battle Tank Squad"
+        },
+        {
+          "entityType": "ArmyAttribute",
+          "strType": "UnitPoint",
+          "value": "0"
+        },
+        {
+          "entityType": "ArmyAttribute",
+          "strType": "UnitType",
+          "value": "Troop"
+        },
+        {
+          "entityType": "ArmyContainer",
+          "strType": "UnitModel",
+          "strName": "UnitModel",
+          "subStr": [
+            {
+              "entityType": "ArmyContainer",
+              "strName": "Leman Russ Battle Tank",
+              "strType": "Model",
+              "subStr": [
+                {
+                  "entityType": "ArmyAttribute",
+                  "strType": "ModelPoint",
+                  "value": "140"
+                },
+                {
+                  "entityType": "ArmyAttribute",
+                  "strType": "ModelPoint",
+                  "value": "140"
+                },
+                {
+                  "entityType": "ArmyContainer",
+                  "strName": "Weapons",
+                  "strType": "Weapons",
+                  "subStr": [
+                    {
+                      "entityType": "ArmyContainer",
+                      "strType": "Weapon",
+                      "subStr": [
+                        {
+                          "entityType": "ArmyAttribute",
+                          "strName": "WeaponName",
+                          "name": "WeaponName",
+                          "value": "Battle Cannon"
+                        },
+                        {
+                          "entityType": "ArmyAttribute",
+                          "strName": "WeaponPoint",
+                          "name": "Point",
+                          "value": "5"
+                        },
+                        {
+                          "entityType": "ArmyAttribute",
+                          "strName": "WeaponUser",
+                          "name": "WeaponUser",
+                          "value": "Leman Russ Battle Tank"
+                        },
+                        {
+                          "entityType": "ArmyContainer",
+                          "strName": "WeaponAttr",
+                          "strType": "Attr",
+                          "subStr": [
+                            {
+                              "entityType": "ArmyAttribute",
+                              "name": "type",
+                              "value": "Melee"
+                            },
+                            {
+                              "entityType": "ArmyAttribute",
+                              "name": "rapid",
+                              "value": "User"
+                            },
+                            {
+                              "entityType": "ArmyAttribute",
+                              "name": "S",
+                              "value": "8"
+                            },
+                            {
+                              "entityType": "ArmyAttribute",
+                              "name": "AP",
+                              "value": "-2"
+                            },
+                            {
+                              "entityType": "ArmyAttribute",
+                              "name": "D",
+                              "value": "D3"
+                            },
+                            {
+                              "entityType": "ArmyContainer",
+                              "strName": "WeaponEffect",
+                              "subStr": [
+                                {
+                                  "entityType": "ArmyRuleEffect",
+                                  "effectDesc": "Blast",
+                                  "effectCode": ""
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "entityType": "ArmyContainer",
+                      "strType": "Weapon",
+                      "subStr": [
+                        {
+                          "entityType": "ArmyContainer",
+                          "strType": "Weapon",
+                          "subStr": [
+                            {
+                              "entityType": "ArmyAttribute",
+                              "strName": "WeaponName",
+                              "name": "WeaponName",
+                              "value": "Heavy Bolter"
+                            },
+                            {
+                              "entityType": "ArmyAttribute",
+                              "strName": "WeaponPoint",
+                              "name": "Point",
+                              "value": "5"
+                            },
+                            {
+                              "entityType": "ArmyAttribute",
+                              "strName": "WeaponUser",
+                              "name": "WeaponUser",
+                              "value": "Leman Russ Battle Tank"
+                            },
+                            {
+                              "entityType": "ArmyContainer",
+                              "strName": "WeaponAttr",
+                              "strType": "Attr",
+                              "subStr": [
+                                {
+                                  "entityType": "ArmyAttribute",
+                                  "name": "type",
+                                  "value": "Heavy"
+                                },
+                                {
+                                  "entityType": "ArmyAttribute",
+                                  "name": "rapid",
+                                  "value": "3"
+                                },
+                                {
+                                  "entityType": "ArmyAttribute",
+                                  "name": "S",
+                                  "value": "5"
+                                },
+                                {
+                                  "entityType": "ArmyAttribute",
+                                  "name": "AP",
+                                  "value": "-1"
+                                },
+                                {
+                                  "entityType": "ArmyAttribute",
+                                  "name": "D",
+                                  "value": "2"
+                                },
+                                {
+                                  "entityType": "ArmyContainer",
+                                  "strName": "WeaponEffect"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "entityType": "ArmyContainer",
+                  "strType": "UnitWeaponList",
+                  "strName": "weaponList",
+                  "subStr": [
+                    {
+                      "entityType": "ArmyContainer",
+                      "strType": "Weapon",
+                      "subStr": [
+                        {
+                          "entityType": "ArmyAttribute",
+                          "strName": "WeaponName",
+                          "name": "WeaponName",
+                          "value": "Demolisher Siege Cannon"
+                        },
+                        {
+                          "entityType": "ArmyAttribute",
+                          "strName": "WeaponPoint",
+                          "name": "Point",
+                          "value": "5"
+                        },
+                        {
+                          "entityType": "ArmyAttribute",
+                          "strName": "WeaponReplace",
+                          "name": "Replace",
+                          "value": "Demolisher Siege Cannon"
+                        },
+                        {
+                          "entityType": "ArmyAttribute",
+                          "strName": "WeaponUser",
+                          "name": "WeaponUser",
+                          "value": "Leman Russ Battle Tank"
+                        },
+                        {
+                          "entityType": "ArmyContainer",
+                          "strName": "WeaponAttr",
+                          "strType": "Attr",
+                          "subStr": [
+                            {
+                              "entityType": "ArmyAttribute",
+                              "name": "type",
+                              "value": "Melee"
+                            },
+                            {
+                              "entityType": "ArmyAttribute",
+                              "name": "rapid",
+                              "value": "User"
+                            },
+                            {
+                              "entityType": "ArmyAttribute",
+                              "name": "S",
+                              "value": "10"
+                            },
+                            {
+                              "entityType": "ArmyAttribute",
+                              "name": "AP",
+                              "value": "-3"
+                            },
+                            {
+                              "entityType": "ArmyAttribute",
+                              "name": "D",
+                              "value": "D6"
+                            },
+                            {
+                              "entityType": "ArmyContainer",
+                              "strName": "WeaponEffect",
+                              "subStr": [
+                                {
+                                  "entityType": "ArmyRuleEffect",
+                                  "effectDesc": "Blast",
+                                  "effectCode": ""
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
